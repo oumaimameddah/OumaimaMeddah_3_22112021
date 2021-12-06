@@ -585,6 +585,7 @@ footer ul .fa-hands-helping {
     }
     .restaurant__title h2{
         display: block;
+        margin-left: 5%;
     }
     .about h2{
         margin-left: 10%;
