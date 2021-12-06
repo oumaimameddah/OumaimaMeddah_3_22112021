@@ -20,6 +20,8 @@ li {
 
 h2 {
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 h6 {
@@ -63,10 +65,16 @@ body, html {
         opacity: 0;
     }
 }
-.main__header h1 {
-    text-align: center;
+.main__header{
+    display: flex;
+    justify-content: center;
 }
-
+.main__header img{
+    width: 40%;
+    height: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
 footer {
     display: block;
     background-color: #353535;
@@ -157,11 +165,11 @@ footer ul .fa-hands-helping {
     }
 }
 
-.restaurant__title h3 {
+.restaurant__title h2 {
     padding: 30px 0px 0px 10px;
 }
 @media screen and (min-width: 768px) {
-    .restaurant__title h3 {
+    .restaurant__title h2 {
         text-align: center;
     }
 }
@@ -197,10 +205,16 @@ footer ul .fa-hands-helping {
     .main__restaurant {
         display: flex;
         justify-content: space-between;
+        justify-content: center;
         flex-flow: row wrap;
     }
 }
 @media screen and (min-width: 1280px) {
+    .main__header img{
+        width: 13%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
     .main__restaurant {
         padding: 0 20%;
     }
@@ -561,6 +575,25 @@ footer ul .fa-hands-helping {
 }
 .operation h2 {
     padding: 20px;
+}
+@media screen and (max-width: 768px) {
+    .operation ul {
+        margin-left: -10%;
+    }
+    .operation h2{
+        display: block;
+    }
+    .restaurant__title h2{
+        display: block;
+    }
+    .about h2{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .about p{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 @media screen and (min-width: 1440px) {
     .operation h2 {
