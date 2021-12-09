@@ -640,11 +640,64 @@ footer ul .fa-hands-helping {
     .dessert__title h3 {
         font-weight: lighter;
     }
-
+    footer ul {
+        margin-left: -5%;
+        margin-top: 5%;
+    }
+    footer ul li:nth-child(1) {
+        font-weight: bold;
+    }
+    footer ul li:nth-child(2) {
+        font-weight: bold;
+    }
+    footer ul .fa-utensils {
+        margin-right: 7px;
+    }
+    footer ul {
+        margin-left: -12%;
+    }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    footer ul {
+        margin-left: -5%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    footer h3 {
+        margin-left: 4%;
+    }
+    footer ul {
+        margin-top: -1%;
+    }
+    footer ul li:nth-child(1) {
+        font-weight: bold;
+    }
+    footer ul li:nth-child(2) {
+        font-weight: bold;
+    }
+    footer ul .fa-utensils {
+        margin-right: 7px;
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .operation h2 {
         text-align: center;
+    }
+    footer ul {
+        margin-top: -1%;
+        margin-left: -2%;
+    }
+    footer ul li:nth-child(1) {
+        font-weight: bold;
+    }
+    footer ul li:nth-child(2) {
+        font-weight: bold;
+    }
+    footer ul .fa-utensils {
+        margin-right: 7px;
     }
 }
 .operation__steps {
