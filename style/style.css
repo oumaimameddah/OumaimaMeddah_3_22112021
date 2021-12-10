@@ -662,6 +662,9 @@ footer ul .fa-hands-helping {
     footer ul {
         margin-left: -5%;
     }
+    .operation h2 {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
