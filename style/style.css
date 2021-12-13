@@ -761,3 +761,7 @@ footer ul .fa-hands-helping {
     display: flex;
 }
 }
+
+footer h3 {
+    font-weight: lighter;
+}
