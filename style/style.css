@@ -763,3 +763,31 @@ footer ul .fa-hands-helping {
 }
 }
 
+/*@for $i from 1 through (4){
+.starter div:nth-of-type(#{$i}){
+    animation: menu-load 800ms 800ms*$i forwards;
+}
+}*/
+/*.starter div {
+    animation: menu-load 1s linear;
+    animation-fill-mode: both;
+}
+
+.starter div:nth-child(1) { animation-delay: .5s }
+.starter div:nth-child(2) { animation-delay: 1s }
+.starter div:nth-child(3) { animation-delay: 1.5s }
+.starter div:nth-child(4) { animation-delay: 2s }
+
+@keyframes menu-load{
+    0% {
+        transform: translateY(20px);
+    }
+    75%{
+        opacity: .5;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}*/
+
