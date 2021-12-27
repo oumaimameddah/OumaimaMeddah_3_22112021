@@ -763,21 +763,10 @@ footer ul .fa-hands-helping {
 }
 }
 
-/*@for $i from 1 through (4){
-.starter div:nth-of-type(#{$i}){
-    animation: menu-load 800ms 800ms*$i forwards;
-}
-}*/
-/*.starter div {
-    animation: menu-load 1s linear;
-    animation-fill-mode: both;
-}
 
-.starter div:nth-child(1) { animation-delay: .5s }
-.starter div:nth-child(2) { animation-delay: 1s }
-.starter div:nth-child(3) { animation-delay: 1.5s }
-.starter div:nth-child(4) { animation-delay: 2s }
-
+.full__menu{
+    opacity: 0;
+}
 @keyframes menu-load{
     0% {
         transform: translateY(20px);
@@ -789,5 +778,51 @@ footer ul .fa-hands-helping {
         transform: translate(0);
         opacity: 1;
     }
-}*/
+}
 
+.starter:nth-child(4n+1) {animation: menu-load 800ms 1000ms forwards;}
+.dish:nth-child(4n+2) {animation: menu-load 800ms 2000ms forwards;}
+.dessert:nth-child(4n+3) {animation: menu-load 800ms 3000ms forwards;}
+
+/*
+.dish{
+    opacity: 0;
+}
+@keyframes menu-load{
+    0% {
+        transform: translateY(20px);
+    }
+    75%{
+        opacity: .5;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.dish:nth-child(4n+1) {animation: menu-load 800ms 1000ms forwards;}
+.dish:nth-child(4n+2) {animation: menu-load 800ms 2000ms forwards;}
+.dish:nth-child(4n+3) {animation: menu-load 800ms 3000ms forwards;}
+.dish:nth-child(4n+4) {animation: menu-load 800ms 4000ms forwards;}
+
+.dessert{
+    opacity: 0;
+}
+@keyframes menu-load{
+    0% {
+        transform: translateY(20px);
+    }
+    75%{
+        opacity: .5;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.dessert:nth-child(4n+1) {animation: menu-load 800ms 1000ms forwards;}
+.dessert:nth-child(4n+2) {animation: menu-load 800ms 2000ms forwards;}
+.dessert:nth-child(4n+3) {animation: menu-load 800ms 3000ms forwards;}
+.dessert:nth-child(4n+4) {animation: menu-load 800ms 4000ms forwards;}*/
