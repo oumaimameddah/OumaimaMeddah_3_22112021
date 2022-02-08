@@ -31,11 +31,6 @@ h6 {
 h1, h6 {
     font-family: Shrikhand, Roboto, sans-serif;
 }
-
-body, html {
-    font-family: "Roboto", sans-serif;
-}
-
 @keyframes grow {
     0%, 100% {
         -webkit-transform: scaleY(1);
@@ -623,9 +618,7 @@ footer ul .fa-hands-helping {
     footer ul {
         margin-left: -12%;
     }
-    .main .btn__order {
-        margin-bottom: 10%;
-    }
+
     .starter__title h3 {
         font-weight: lighter;
     }
@@ -761,8 +754,20 @@ footer ul .fa-hands-helping {
     margin: 3% auto 3% auto;
     display: flex;
 }
-
-/*annimation degrade*/
+.btn__order{
+    background-color: #f6f6f6
+}
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+    .btn__order{
+        margin-top: -2%;
+    }
+}
+@media screen and (min-width: 414px) and (max-width: 896px) {
+    .btn__order{
+        margin-top: -3%;
+    }
+}
+/*annimation degrade par bloc*/
 
 .starter{
     opacity:0;
@@ -789,3 +794,26 @@ footer ul .fa-hands-helping {
 .starter:nth-child(4n+1) {animation: menu-load 800ms 1000ms forwards;}
 .dish:nth-child(4n+2) {animation: menu-load 800ms 2000ms forwards;}
 .dessert:nth-child(4n+3) {animation: menu-load 800ms 3000ms forwards;}
+
+/*
+un par un
+.meals{
+    opacity:0;
+}
+@keyframes menu-load{
+    0% {
+        transform: translateY(20px);
+    }
+    75%{
+        opacity: .5;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.meals:nth-child(4n+1) {animation: menu-load 800ms 1000ms forwards;}
+.meals:nth-child(4n+2) {animation: menu-load 800ms 2000ms forwards;}
+.meals:nth-child(4n+3) {animation: menu-load 800ms 3000ms forwards;}
+.meals:nth-child(4n+4) {animation: menu-load 800ms 4000ms forwards;}*/
