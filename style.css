@@ -326,8 +326,8 @@ footer ul .fa-hands-helping {
 
 .main__menu {
     background-color: #f6f6f6;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     width: 100%;
     position: relative;
     margin-top: -50px;
