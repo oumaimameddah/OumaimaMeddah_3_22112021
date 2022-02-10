@@ -701,8 +701,9 @@ footer ul .fa-hands-helping {
         margin-right: 5%;
     }
     .menu__title{
-        padding-top: 10%;
-        margin-left: 2%;
+        padding-top: 9%;
+        margin-left: 3%;
+        font-size: larger;
     }
     .starter__title{
         margin-left: 2%;
