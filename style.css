@@ -703,6 +703,8 @@ footer ul .fa-hands-helping {
     .menu__title{
         padding-top: 9%;
         margin-left: 3%;
+    }
+    .menu__title h2{
         font-size: larger;
     }
     .starter__title{
