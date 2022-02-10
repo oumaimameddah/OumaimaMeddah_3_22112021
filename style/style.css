@@ -86,14 +86,15 @@ footer {
     color: white;
 }
 
-@media screen and (min-width: 768px) {
-    footer {
-        text-align: center;
-    }
+@  media screen and (min-width: 768px) {
+footer {
+    text-align: center;
+}
 }
 footer h3 {
     font-family: "Shrikhand", "sans-serif";
     padding: 5px 0 20px 0;
+    font-weight: lighter;
 }
 
 footer a {
@@ -415,11 +416,11 @@ footer ul .fa-hands-helping {
     background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     border: 1px solid transparent;
     border-radius: 30px;
+    padding: 10px 5px;
     color: #fff;
     font-weight: bold;
     box-shadow: 4px 4px 6px #aaa;
     cursor: pointer;
-    padding: 0.75rem 1.5rem;
 }
 .btn__about button:hover {
     background-color: #ae80e5;
@@ -558,6 +559,26 @@ footer ul .fa-hands-helping {
     .btn__order button {
         width: 25%;
     }
+    .menu__title {
+        justify-content: center;
+    }
+    menu__title h2 {
+        margin-right: 1%;
+    }
+    .main .btn__order button {
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    .starter {
+        margin-bottom: 3%;
+    }
+    .menu__title h2 {
+        margin-top: 1%;
+    }
+    .fill__heart {
+        margin-top: 1%;
+        margin-left: 1%;
+    }
 }
 .btn__order button:hover {
     background-color: #ae80e5;
@@ -576,37 +597,151 @@ footer ul .fa-hands-helping {
 .operation h2 {
     padding: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 844px) {
     .operation ul {
         margin-left: -10%;
     }
-    .operation h2{
+
+    .operation h2 {
         display: block;
     }
-    .restaurant__title h2{
+
+    .restaurant__title h2 {
         display: block;
         margin-left: 5%;
     }
-    .about h2{
+
+    .about h2 {
         margin-left: 10%;
         margin-right: 10%;
     }
-    .about p{
-        margin: 1.5rem;
+
+    .about p {
+        margin-left: 5%;
+        margin-right: 5%;
     }
-    h2{
-        margin-top: 7%;
+
+    footer h3 {
+        margin-top: -2%;
+        margin-bottom: -5%;
     }
-    .operation__steps li p {
+
+    footer ul {
+        margin-left: -12%;
+    }
+
+    .main .btn__order {
+        background-color: #f6f6f6;
+        padding-bottom: 8%;
+    }
+
+    .starter__title h3 {
+        font-weight: lighter;
+    }
+
+    .starter {
+        margin-bottom: 10%;
+    }
+
+    .dish {
+        margin-bottom: 10%;
+    }
+
+    .dish__title h3 {
+        font-weight: lighter;
+    }
+
+    .dessert__title h3 {
+        font-weight: lighter;
+    }
+
+    footer ul {
+        margin-left: -5%;
+        margin-top: 5%;
+    }
+
+    footer ul li:nth-child(1) {
         font-weight: bold;
     }
-    .new{
-        font-weight: bolder;
+
+    footer ul li:nth-child(2) {
+        font-weight: bold;
+    }
+
+    footer ul .fa-utensils {
+        margin-right: 7px;
+    }
+
+    footer ul {
+        margin-left: -12%;
+    }
+
+    .operation h2 {
+        margin-top: 6%;
+        margin-bottom: -1%;
+    }
+    .restaurant h2 {
+        margin-top: 5%;
+    }
+    .new {
+        margin-right: 2%;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .main__restaurant {
+        padding-bottom: 15%;
+    }
+    .main__menu {
+        margin-bottom: -3%;
+    }
+    .dessert {
+        padding-bottom: 3%;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    footer ul {
+        margin-left: -5%;
+    }
+    .operation h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    footer h3 {
+        margin-left: 4%;
+    }
+    footer ul {
+        margin-top: -1%;
+    }
+    footer ul li:nth-child(1) {
+        font-weight: bold;
+    }
+    footer ul li:nth-child(2) {
+        font-weight: bold;
+    }
+    footer ul .fa-utensils {
+        margin-right: 7px;
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .operation h2 {
         text-align: center;
+    }
+    footer ul {
+        margin-top: -1%;
+        margin-left: -2%;
+    }
+    footer ul li:nth-child(1) {
+        font-weight: bold;
+    }
+    footer ul li:nth-child(2) {
+        font-weight: bold;
+    }
+    footer ul .fa-utensils {
+        margin-right: 7px;
     }
 }
 .operation__steps {
@@ -634,6 +769,7 @@ footer ul .fa-hands-helping {
     background-color: #f5f5f5;
 }
 .operation__steps li p {
+    font-weight: 500;
     margin-left: 20px;
 }
 .operation__steps li:hover {
@@ -654,8 +790,27 @@ footer ul .fa-hands-helping {
     font-size: 1.2rem;
     margin-left: 20px;
 }
-.meals{
-    opacity: 0;
+.menu__header{
+    display: flex;
+    justify-content: center;
+}
+.menu__header img{
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    margin: 3% auto 3% auto;
+    display: flex;
+}
+}
+
+.starter{
+    opacity:0;
+}
+.dish{
+    opacity:0;
+}
+.dessert{
+    opacity:0;
 }
 @keyframes menu-load{
     0% {
@@ -670,7 +825,6 @@ footer ul .fa-hands-helping {
     }
 }
 
-.submenu:nth-child(4n+1) {animation: menu-load 800ms 1000ms forwards;}
-.submenu:nth-child(4n+2) {animation: menu-load 800ms 2000ms forwards;}
-.submenu:nth-child(4n+3) {animation: menu-load 800ms 3000ms forwards;}
-.submenu:nth-child(4n+4) {animation: menu-load 800ms 4000ms forwards;}
+.starter:nth-child(4n+1) {animation: menu-load 800ms 1000ms forwards;}
+.dish:nth-child(4n+2) {animation: menu-load 800ms 2000ms forwards;}
+.dessert:nth-child(4n+3) {animation: menu-load 800ms 3000ms forwards;}
