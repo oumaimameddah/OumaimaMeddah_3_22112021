@@ -598,6 +598,10 @@ footer ul .fa-hands-helping {
     padding: 20px;
 }
 @media screen and (max-width: 844px) {
+    .btn__about button{
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
     .operation ul {
         margin-left: -10%;
     }
