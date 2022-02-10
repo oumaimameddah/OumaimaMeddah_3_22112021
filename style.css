@@ -704,6 +704,9 @@ footer ul .fa-hands-helping {
         padding-top: 10%;
         margin-left: 2%;
     }
+    .starter__title{
+        margin-left: 2%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
