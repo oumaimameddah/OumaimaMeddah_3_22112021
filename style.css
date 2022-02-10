@@ -793,7 +793,7 @@ footer ul .fa-hands-helping {
     background-color: #f5f5f5;
 }
 .operation__steps li p {
-    font-weight: 500;
+    font-weight: bolder;
     margin-left: 20px;
 }
 .operation__steps li:hover {
