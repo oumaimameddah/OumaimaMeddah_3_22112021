@@ -416,8 +416,6 @@ footer ul .fa-hands-helping {
     background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     border: 1px solid transparent;
     border-radius: 30px;
-    padding-left: 5%;
-    padding-right: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
     color: #fff;
@@ -618,7 +616,11 @@ footer ul .fa-hands-helping {
         margin-left: 10%;
         margin-right: 10%;
     }
-
+    
+    .about button{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .about p {
         margin-left: 5%;
         margin-right: 5%;
